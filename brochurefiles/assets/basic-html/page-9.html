@@ -1,0 +1,331 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>Proper News</title>
+
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+    CURRENT_PAGE = "9";
+    MAIN_PAGE     = "index.html";
+    FILES_FOLDER  = "brochurefiles";
+
+
+    
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        STATIC_FOLDER = ".";
+        DYNAMIC_FOLDER = "./..";
+
+        PUBLICATION_NAME = "Proper News";
+
+        CURRENT_VERSION = "2.7.26";
+
+        LANGS = ['en'];
+        PUBLICATION_TYPE = "catalog";
+        VIDEOS_INFO = {};
+
+    var main = function () {
+
+        loadScript('./javascript/localizator.js',function(){});
+
+        if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+            var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname);
+            var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+            loadScript(url,function(){});
+        }
+
+    }
+
+    if (!!window.addEventListener) {
+        window.addEventListener('load', main);
+    } else {
+        window.attachEvent('onload', main);
+    }
+
+    function loadScript(url, callback){
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+        if (script.readyState){
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {
+            script.onload = function(){
+                callback();
+            };
+        }
+    }
+    </script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover, .contentItemHover:hover, .emptyImage:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+
+    </style>
+</head>
+<body style="font-size: 20px; background-color: #ECF0F1;">
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.png" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+		    
+				<ul class="downloadButton toolbarLink">
+					<li class="iconLi">
+						<img class="iconToolbar" src="styles/save.png" alt="Downloads" />
+                        <img class="iconToolbar mobile" src="styles/save-mobile.png" alt="Downloads" />
+					</li>
+						<li id="downloadPdf" class="downloadSubMenu">
+							<a id="downloadPdfLink" href="./../common/downloads/publication.pdf" target="_blank"></a>
+						</li>
+										                    					
+				</ul>
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-8.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;9 / 28</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-10.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<span id="basicVersionTitle" class="basicInfoTitle"></span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+
+		<a class="mobileMenuButton" id="mobileMenuButton">
+            <img src="styles/mobile-menu.png" alt="Show Menu" style="" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-8.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">9 / 28</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-10.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 612px; height: 792px; margin: 40px 0 0 -306px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0009.jpg" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:2.651515%;left:88.888889%;width:2.614379%;height:1.388889%;font-size:0.450000em;color:#000000;font-family:Myriad Pro;">
+							<b>GTS</b>
+						</p>
+						<p class="textItem testString" style="top:2.777778%;left:92.320261%;width:1.797386%;height:1.262626%;font-size:0.450000em;color:#054E82;font-family:Myriad;">
+							|  9
+						</p>
+						<p class="textItem testString" style="top:55.303030%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							The GTS Design team continues to train our newly hired
+						</p>
+						<p class="textItem " style="top:56.818182%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							designers to get them up to speed on Proper design standards.
+						</p>
+						<p class="textItem " style="top:58.333333%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							In addition, our team is working on the transition from UG
+						</p>
+						<p class="textItem " style="top:59.848485%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							software to Cimatron software. In an effort to become proficient
+						</p>
+						<p class="textItem " style="top:61.363636%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							using Cimatron, two designers that have started using the
+						</p>
+						<p class="textItem " style="top:62.878788%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							software full time. Doug Draca has been a great help with the
+						</p>
+						<p class="textItem " style="top:64.393939%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							transition by being available for online meetings with China to
+						</p>
+						<p class="textItem " style="top:65.909091%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							explain the many proprietary improvements that Proper has
+						</p>
+						<p class="textItem " style="top:67.424242%;left:50.980392%;width:22.875817%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							developed for Cimatron software.
+						</p>
+						<p class="textItem " style="top:70.454545%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							New developments on the shop floor include the addition of
+						</p>
+						<p class="textItem " style="top:71.969697%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							a rotary platen to our 600 ton molding machine. The purchase
+						</p>
+						<p class="textItem " style="top:73.484848%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							of this rotary platen was made due to a lack of good outsource
+						</p>
+						<p class="textItem " style="top:75.000000%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							options and high outsourcing costs. On a recent tooling program
+						</p>
+						<p class="textItem " style="top:76.515152%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							that included 10 rotary 2-shot molds, we were able to perform
+						</p>
+						<p class="textItem " style="top:78.030303%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							all the tryouts and required part runs in house.  The ability to run
+						</p>
+						<p class="textItem " style="top:79.545455%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							tryouts in house resulted in a substantial savings in outsourcing
+						</p>
+						<p class="textItem " style="top:81.060606%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							and transportation costs, and also allowed us to better respond
+						</p>
+						<p class="textItem " style="top:82.575758%;left:50.980392%;width:26.143791%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							to the customers timing requirements.
+						</p>
+						<p class="textItem " style="top:85.606061%;left:50.980392%;width:8.823529%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							<b>David Loehr</b>
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#3E3E43;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#3E3E43;" class="footerNavLink">&#8230;</span>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-4.html">4</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-5.html">5</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-6.html">6</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-7.html">7</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-8.html">8</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink currPage" href="./page-9.html">9</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-10.html">10</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-11.html">11</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-12.html">12</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-13.html">13</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-14.html">14</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-15.html">15</a>
+						<span style="color:#3E3E43;" class="footerNavLink">&#8230;</span>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink" href="./page-28.html">28</a>
+
+				<a style="color:#3E3E43;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	        if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+	            BASIC_PAGE = new BasicPage();
+	        }
+	        GALLERY_CONTENT = {};
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+

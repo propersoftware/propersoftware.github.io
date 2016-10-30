@@ -1,0 +1,430 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>Proper News</title>
+
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+    CURRENT_PAGE = "18";
+    MAIN_PAGE     = "index.html";
+    FILES_FOLDER  = "brochurefiles";
+
+
+    
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        STATIC_FOLDER = ".";
+        DYNAMIC_FOLDER = "./..";
+
+        PUBLICATION_NAME = "Proper News";
+
+        CURRENT_VERSION = "2.7.26";
+
+        LANGS = ['en'];
+        PUBLICATION_TYPE = "catalog";
+        VIDEOS_INFO = {};
+
+    var main = function () {
+
+        loadScript('./javascript/localizator.js',function(){});
+
+        if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+            var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname);
+            var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+            loadScript(url,function(){});
+        }
+
+    }
+
+    if (!!window.addEventListener) {
+        window.addEventListener('load', main);
+    } else {
+        window.attachEvent('onload', main);
+    }
+
+    function loadScript(url, callback){
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+        if (script.readyState){
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {
+            script.onload = function(){
+                callback();
+            };
+        }
+    }
+    </script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover, .contentItemHover:hover, .emptyImage:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+
+    </style>
+</head>
+<body style="font-size: 20px; background-color: #ECF0F1;">
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.png" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+		    
+				<ul class="downloadButton toolbarLink">
+					<li class="iconLi">
+						<img class="iconToolbar" src="styles/save.png" alt="Downloads" />
+                        <img class="iconToolbar mobile" src="styles/save-mobile.png" alt="Downloads" />
+					</li>
+						<li id="downloadPdf" class="downloadSubMenu">
+							<a id="downloadPdfLink" href="./../common/downloads/publication.pdf" target="_blank"></a>
+						</li>
+										                    					
+				</ul>
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-17.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;18 / 28</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-19.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<span id="basicVersionTitle" class="basicInfoTitle"></span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+
+		<a class="mobileMenuButton" id="mobileMenuButton">
+            <img src="styles/mobile-menu.png" alt="Show Menu" style="" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-17.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">18 / 28</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-19.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 612px; height: 792px; margin: 40px 0 0 -306px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0018.jpg" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:2.777778%;left:5.882353%;width:2.614379%;height:1.262626%;font-size:0.450000em;color:#054E82;font-family:Myriad;">
+							18  |
+						</p>
+						<p class="textItem testString" style="top:2.651515%;left:8.986928%;width:4.411765%;height:1.388889%;font-size:0.450000em;color:#000000;font-family:Myriad Pro;">
+							<b>Proper</b>
+						</p>
+						<p class="textItem testString" style="top:2.651515%;left:13.562092%;width:4.575163%;height:1.388889%;font-size:0.450000em;color:#000000;font-family:Myriad Pro;">
+							Tooling
+						</p>
+						<p class="textItem " style="top:51.893939%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							When walking through the shop, it is becoming increasing more
+						</p>
+						<p class="textItem " style="top:53.409091%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							evident that we aremachining a significant amount of aluminum
+						</p>
+						<p class="textItem " style="top:54.924242%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							prototype tooling. This has not always been the case. Usually
+						</p>
+						<p class="textItem " style="top:56.439394%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							the prototype and production tooling divisions operated as
+						</p>
+						<p class="textItem " style="top:57.954545%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							separate entities, and there was little interface between the two
+						</p>
+						<p class="textItem " style="top:59.469697%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							groups. That is changing rapidly, as the two divisions are being
+						</p>
+						<p class="textItem " style="top:60.984848%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							blended together, and there is a much higher degree of work
+						</p>
+						<p class="textItem " style="top:62.500000%;left:6.209150%;width:19.607843%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							sharing between the groups.
+						</p>
+						<p class="textItem " style="top:65.530303%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							This blending of the two groups provides unparalleled
+						</p>
+						<p class="textItem " style="top:67.045455%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							opportunities for Proper Group International, offering
+						</p>
+						<p class="textItem " style="top:68.560606%;left:6.209150%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							advantages that were not previously available. They are as
+						</p>
+						<p class="textItem " style="top:70.075758%;left:6.209150%;width:5.228758%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							follows:
+						</p>
+						<p class="textItem " style="top:73.106061%;left:6.209150%;width:41.830065%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Supplements our manufacturing workload, and fills gaps in
+						</p>
+						<p class="textItem " style="top:74.621212%;left:7.843137%;width:38.725490%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							our schedule, when production tool build activity is light.
+						</p>
+						<p class="textItem " style="top:76.136364%;left:7.843137%;width:38.071895%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Aids in keeping our workforce busy, while maintaining a
+						</p>
+						<p class="textItem " style="top:77.651515%;left:7.843137%;width:17.320261%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							consistent work schedule
+						</p>
+						<p class="textItem " style="top:79.797980%;left:6.209150%;width:38.725490%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Allows us to take on large prototype tooling programs,
+						</p>
+						<p class="textItem " style="top:81.313131%;left:7.843137%;width:34.477124%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							ranging from small to large tooling. In the past, the
+						</p>
+						<p class="textItem " style="top:82.828283%;left:7.843137%;width:34.640523%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							prototype division was hamstrung when it came to
+						</p>
+						<p class="textItem " style="top:84.343434%;left:7.843137%;width:40.032680%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							building larger tooling, due to machine size limitations and
+						</p>
+						<p class="textItem " style="top:85.858586%;left:7.843137%;width:7.843137%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							capabilities
+						</p>
+						<p class="textItem " style="top:87.878788%;left:6.209150%;width:41.830065%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• As we are highly specialized in the design and manufacture
+						</p>
+						<p class="textItem " style="top:89.393939%;left:7.843137%;width:38.562092%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							of automotive lighting tooling, it gives us a leg up on our
+						</p>
+						<p class="textItem " style="top:90.909091%;left:7.843137%;width:37.908497%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							prototype competition, as most prototype shops do not
+						</p>
+						<p class="textItem " style="top:92.424242%;left:7.843137%;width:39.052288%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							possess our skillset or expertise. Many shy away, reducing
+						</p>
+						<p class="textItem " style="top:93.939394%;left:7.843137%;width:35.130719%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							the amount of competition vying for the same work
+						</p>
+						<p class="textItem " style="top:51.893939%;left:51.307190%;width:37.745098%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Many prototype tooling programs evolve, and we are
+						</p>
+						<p class="textItem " style="top:53.409091%;left:52.941176%;width:41.339869%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							selected to build the production tooling as well. This gives us
+						</p>
+						<p class="textItem " style="top:54.924242%;left:52.941176%;width:40.196078%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							a distinct advantage, as lessons learned from the prototype
+						</p>
+						<p class="textItem " style="top:56.439394%;left:52.941176%;width:34.803922%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							build are taken into account, and are applied to the
+						</p>
+						<p class="textItem " style="top:57.954545%;left:52.941176%;width:41.013072%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							production tooling build, which enable us to avoid the same
+						</p>
+						<p class="textItem " style="top:59.469697%;left:52.941176%;width:29.575163%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							pitfalls encountered in the prototype phase
+						</p>
+						<p class="textItem " style="top:61.616162%;left:51.307190%;width:37.254902%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• A large portion of the prototype tool build process is
+						</p>
+						<p class="textItem " style="top:63.131313%;left:52.941176%;width:37.908497%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							geared towards making high quality molded parts, with
+						</p>
+						<p class="textItem " style="top:64.646465%;left:52.941176%;width:37.091503%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							expectations that the product produced mimics actual
+						</p>
+						<p class="textItem " style="top:66.161616%;left:52.941176%;width:40.522876%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							production parts. The selling price of the parts is oftentimes
+						</p>
+						<p class="textItem " style="top:67.676768%;left:52.941176%;width:30.555556%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							more significant than the price of the tooling
+						</p>
+						<p class="textItem " style="top:69.696970%;left:51.307190%;width:38.888889%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Bolsters the workload in our mold tryout area, whereas
+						</p>
+						<p class="textItem " style="top:71.212121%;left:52.941176%;width:36.928105%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							previously we were primarily dedicated to trialing new
+						</p>
+						<p class="textItem " style="top:72.727273%;left:52.941176%;width:37.908497%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							production tooling. More often than not, the number of
+						</p>
+						<p class="textItem " style="top:74.242424%;left:52.941176%;width:40.522876%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							prototype tool trials, exceeds the number of our production
+						</p>
+						<p class="textItem " style="top:75.757576%;left:52.941176%;width:14.052288%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							tool trials performed
+						</p>
+						<p class="textItem " style="top:77.904040%;left:51.307190%;width:41.013072%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Profitability on prototype tooling programs is significantly
+						</p>
+						<p class="textItem " style="top:79.419192%;left:52.941176%;width:35.130719%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							higher, when compared to production tooling build
+						</p>
+						<p class="textItem " style="top:80.934343%;left:52.941176%;width:6.699346%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							programs
+						</p>
+						<p class="textItem " style="top:84.469697%;left:51.307190%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							The blending of the two groups has been a success, and is good
+						</p>
+						<p class="textItem " style="top:85.984848%;left:51.307190%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							for Proper Group International. Look for more of the same type
+						</p>
+						<p class="textItem " style="top:87.500000%;left:51.307190%;width:17.156863%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							of activity going forward.
+						</p>
+						<p class="textItem " style="top:90.530303%;left:51.307190%;width:6.372549%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							<b>Pat Riley</b>
+						</p>
+						<p class="textItem " style="top:14.898990%;left:6.045752%;width:50.000000%;height:6.565657%;font-size:2.150000em;color:#000000;font-family:Myriad Pro;">
+							Prototype Tooling
+						</p>
+						<p class="textItem " style="top:19.823232%;left:6.045752%;width:23.529412%;height:6.565657%;font-size:2.150000em;color:#000000;font-family:Myriad Pro;">
+							Invasion
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#3E3E43;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#3E3E43;" class="footerNavLink">&#8230;</span>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-13.html">13</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-14.html">14</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-15.html">15</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-16.html">16</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-17.html">17</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink currPage" href="./page-18.html">18</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-19.html">19</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-20.html">20</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-21.html">21</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-22.html">22</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-23.html">23</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-24.html">24</a>
+						<span style="color:#3E3E43;" class="footerNavLink">&#8230;</span>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink" href="./page-28.html">28</a>
+
+				<a style="color:#3E3E43;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	        if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+	            BASIC_PAGE = new BasicPage();
+	        }
+	        GALLERY_CONTENT = {};
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+

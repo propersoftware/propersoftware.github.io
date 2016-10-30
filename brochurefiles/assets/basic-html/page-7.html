@@ -1,0 +1,465 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>Proper News</title>
+
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+    CURRENT_PAGE = "7";
+    MAIN_PAGE     = "index.html";
+    FILES_FOLDER  = "brochurefiles";
+
+
+    
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        STATIC_FOLDER = ".";
+        DYNAMIC_FOLDER = "./..";
+
+        PUBLICATION_NAME = "Proper News";
+
+        CURRENT_VERSION = "2.7.26";
+
+        LANGS = ['en'];
+        PUBLICATION_TYPE = "catalog";
+        VIDEOS_INFO = {};
+
+    var main = function () {
+
+        loadScript('./javascript/localizator.js',function(){});
+
+        if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+            var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname);
+            var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+            loadScript(url,function(){});
+        }
+
+    }
+
+    if (!!window.addEventListener) {
+        window.addEventListener('load', main);
+    } else {
+        window.attachEvent('onload', main);
+    }
+
+    function loadScript(url, callback){
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+        if (script.readyState){
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {
+            script.onload = function(){
+                callback();
+            };
+        }
+    }
+    </script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover, .contentItemHover:hover, .emptyImage:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+
+    </style>
+</head>
+<body style="font-size: 20px; background-color: #ECF0F1;">
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.png" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+		    
+				<ul class="downloadButton toolbarLink">
+					<li class="iconLi">
+						<img class="iconToolbar" src="styles/save.png" alt="Downloads" />
+                        <img class="iconToolbar mobile" src="styles/save-mobile.png" alt="Downloads" />
+					</li>
+						<li id="downloadPdf" class="downloadSubMenu">
+							<a id="downloadPdfLink" href="./../common/downloads/publication.pdf" target="_blank"></a>
+						</li>
+										                    					
+				</ul>
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-6.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;7 / 28</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-8.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<span id="basicVersionTitle" class="basicInfoTitle"></span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+
+		<a class="mobileMenuButton" id="mobileMenuButton">
+            <img src="styles/mobile-menu.png" alt="Show Menu" style="" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-6.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">7 / 28</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-8.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 612px; height: 792px; margin: 40px 0 0 -306px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0007.jpg" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:2.651515%;left:81.535948%;width:4.411765%;height:1.388889%;font-size:0.450000em;color:#000000;font-family:Myriad Pro;">
+							<b>Proper</b>
+						</p>
+						<p class="textItem testString" style="top:2.651515%;left:86.111111%;width:5.718954%;height:1.388889%;font-size:0.450000em;color:#000000;font-family:Myriad Pro;">
+							Polymers
+						</p>
+						<p class="textItem testString" style="top:2.777778%;left:92.320261%;width:1.797386%;height:1.262626%;font-size:0.450000em;color:#054E82;font-family:Myriad;">
+							|  7
+						</p>
+						<p class="textItem " style="top:39.898990%;left:5.882353%;width:31.209150%;height:2.651515%;font-size:0.850000em;color:#054E82;font-family:Myriad Pro;">
+							Proper Polymers Greenville
+						</p>
+						<p class="textItem " style="top:42.550505%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							The Proper Polymers Greenville facility received its certificate
+						</p>
+						<p class="textItem " style="top:44.065657%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							of occupancy on September 15th.  As the building is entering
+						</p>
+						<p class="textItem " style="top:45.580808%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							its final stages of completion, auxiliary molding and processing
+						</p>
+						<p class="textItem " style="top:47.095960%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							equipment is being installed concurrently. The first press is
+						</p>
+						<p class="textItem " style="top:48.611111%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							scheduled to arrive on August 29th. From September, through
+						</p>
+						<p class="textItem " style="top:50.126263%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							the end of 2016, we will install 10 of the 11 presses planned
+						</p>
+						<p class="textItem " style="top:51.641414%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							for Greenville. The final press will be installed in April 2017. The
+						</p>
+						<p class="textItem " style="top:53.156566%;left:5.882353%;width:29.248366%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							following is the press line up for Greenville:
+						</p>
+						<p class="textItem " style="top:55.429293%;left:10.130719%;width:28.431373%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							(2) 2300 Ton  |  (2) 1600 Ton  |  (3) 1300 Ton
+						</p>
+						<p class="textItem " style="top:57.070707%;left:10.130719%;width:16.666667%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							(3) 750 Ton  |  (1) 551 Ton
+						</p>
+						<p class="textItem " style="top:59.090909%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							In addition to the new facility, we have 55molds arriving in theUS
+						</p>
+						<p class="textItem " style="top:60.606061%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							fromChina, over the next month. Many of these were built at our
+						</p>
+						<p class="textItem " style="top:62.121212%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							own GTS facility in Shenzhen, China. Proper Tooling’s operations
+						</p>
+						<p class="textItem " style="top:63.636364%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							in North America are completing 19 additional molds for this
+						</p>
+						<p class="textItem " style="top:65.151515%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							program. These tools are for the new BMW X3 vehicles which go
+						</p>
+						<p class="textItem " style="top:66.666667%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							into production in August of 2017. In addition, Proper Tooling
+						</p>
+						<p class="textItem " style="top:68.181818%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							will be building 78 molds for the BMW X4 program, which will
+						</p>
+						<p class="textItem " style="top:69.696970%;left:5.882353%;width:20.424837%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							start production early in 2018.
+						</p>
+						<p class="textItem " style="top:71.969697%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							The execution of this program from the Proper Group Team has
+						</p>
+						<p class="textItem " style="top:73.484848%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							been nearly flawless to this point. Due to the magnitude of this
+						</p>
+						<p class="textItem " style="top:75.000000%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							program, Proper is getting significant, positive visibility from
+						</p>
+						<p class="textItem " style="top:76.515152%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							our customer, as well as at the highest levels in BMW. This is all
+						</p>
+						<p class="textItem " style="top:78.030303%;left:5.882353%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							thanks to the incredible efforts by our teams on the program
+						</p>
+						<p class="textItem " style="top:79.545455%;left:5.882353%;width:23.856209%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							and facility execution. Great job all!
+						</p>
+						<p class="textItem " style="top:40.025253%;left:50.980392%;width:42.973856%;height:2.651515%;font-size:0.850000em;color:#054E82;font-family:Myriad Pro;">
+							Proper Polymers Pulaski ups its game
+						</p>
+						<p class="textItem " style="top:42.297980%;left:50.980392%;width:41.666667%;height:2.651515%;font-size:0.850000em;color:#054E82;font-family:Myriad Pro;">
+							for testing and validation of lighting
+						</p>
+						<p class="textItem " style="top:44.570707%;left:50.980392%;width:10.457516%;height:2.651515%;font-size:0.850000em;color:#054E82;font-family:Myriad Pro;">
+							products
+						</p>
+						<p class="textItem " style="top:47.222222%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							The Pulaski plant is fresh off receiving very high marks from a
+						</p>
+						<p class="textItem " style="top:48.737374%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							high level purchasing and quality manager from BMW. One area
+						</p>
+						<p class="textItem " style="top:50.252525%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							that really impressed the BMW Manager was the lab in Pulaski.
+						</p>
+						<p class="textItem " style="top:51.767677%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Pulaski’s lab is very clean and well organized, as you will see from
+						</p>
+						<p class="textItem " style="top:53.282828%;left:50.980392%;width:12.418301%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							the picture below.
+						</p>
+						<p class="textItem testString" style="top:22.727273%;left:5.882353%;width:22.385621%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Proper Polymers before the expansion.</i>
+						</p>
+						<p class="textItem " style="top:38.005051%;left:5.882353%;width:21.405229%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Proper Polymers after the expansion.</i>
+						</p>
+						<p class="textItem " style="top:94.191919%;left:5.882353%;width:20.098039%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Proper Polymers Greenville Facility</i>
+						</p>
+						<p class="textItem " style="top:21.338384%;left:50.980392%;width:25.490196%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Proper Polymers Greenville - Manufacturing</i>
+						</p>
+						<p class="textItem " style="top:36.111111%;left:50.980392%;width:43.137255%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Proper Polymers Greenville - Warehouse with material conveyance mezza-</i>
+						</p>
+						<p class="textItem " style="top:37.500000%;left:50.980392%;width:33.496732%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>nine to the left and office construction in the background.</i>
+						</p>
+						<p class="textItem " style="top:55.555556%;left:76.143791%;width:15.359477%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>The Pulaski lab is currently</i>
+						</p>
+						<p class="textItem " style="top:56.944444%;left:76.143791%;width:14.705882%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>outfitted with a Hexagon</i>
+						</p>
+						<p class="textItem " style="top:58.333333%;left:76.143791%;width:15.849673%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Coordinate Measuring Ma-</i>
+						</p>
+						<p class="textItem " style="top:59.595960%;left:76.143791%;width:16.993464%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>chine, Moisture Analyzer and</i>
+						</p>
+						<p class="textItem " style="top:60.984848%;left:76.143791%;width:15.686275%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Microscope. In late August,</i>
+						</p>
+						<p class="textItem " style="top:62.373737%;left:76.143791%;width:16.666667%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Pulaski will take delivery of a</i>
+						</p>
+						<p class="textItem " style="top:63.762626%;left:76.143791%;width:16.176471%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Vertical Photometer and an</i>
+						</p>
+						<p class="textItem " style="top:65.151515%;left:76.143791%;width:7.516340%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Ellipsometer.</i>
+						</p>
+						<p class="textItem " style="top:67.550505%;left:76.143791%;width:16.666667%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>The ellipsometer is a special-</i>
+						</p>
+						<p class="textItem " style="top:68.939394%;left:76.143791%;width:16.666667%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>ized piece of equipment that</i>
+						</p>
+						<p class="textItem " style="top:70.328283%;left:76.143791%;width:14.705882%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Pulaski will use to quickly</i>
+						</p>
+						<p class="textItem " style="top:71.717172%;left:76.143791%;width:14.052288%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>validate if the monomer</i>
+						</p>
+						<p class="textItem " style="top:72.979798%;left:76.143791%;width:17.320261%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>applied during the metalizing</i>
+						</p>
+						<p class="textItem " style="top:74.368687%;left:76.143791%;width:16.993464%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>process is meeting customers</i>
+						</p>
+						<p class="textItem " style="top:75.757576%;left:76.143791%;width:16.503268%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>thickness requirements.  The</i>
+						</p>
+						<p class="textItem " style="top:77.146465%;left:76.143791%;width:17.647059%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>monomer is critical to protect-</i>
+						</p>
+						<p class="textItem " style="top:78.535354%;left:76.143791%;width:15.032680%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>ing the metalized surface.</i>
+						</p>
+						<p class="textItem " style="top:81.060606%;left:62.581699%;width:29.738562%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>A Vertical Photometer is a device used for measure-</i>
+						</p>
+						<p class="textItem " style="top:82.449495%;left:62.581699%;width:30.065359%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>ment of the light emitted from an object at different</i>
+						</p>
+						<p class="textItem " style="top:83.712121%;left:62.581699%;width:28.594771%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>angles. This testing is a requirement for the many</i>
+						</p>
+						<p class="textItem " style="top:85.101010%;left:62.581699%;width:26.960784%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>lighting components produced in Pulaski. This</i>
+						</p>
+						<p class="textItem " style="top:86.489899%;left:62.581699%;width:30.555556%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>equipment will provide instant feedback of expected</i>
+						</p>
+						<p class="textItem " style="top:87.878788%;left:62.581699%;width:31.209150%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>nominal test values, control limits and pass/fail limits.</i>
+						</p>
+						<p class="textItem " style="top:90.530303%;left:62.581699%;width:7.843137%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							<b>Joe Grippe</b>
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#3E3E43;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-2.html">2</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-3.html">3</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-4.html">4</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-5.html">5</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-6.html">6</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink currPage" href="./page-7.html">7</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-8.html">8</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-9.html">9</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-10.html">10</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-11.html">11</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-12.html">12</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-13.html">13</a>
+						<span style="color:#3E3E43;" class="footerNavLink">&#8230;</span>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink" href="./page-28.html">28</a>
+
+				<a style="color:#3E3E43;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	        if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+	            BASIC_PAGE = new BasicPage();
+	        }
+	        GALLERY_CONTENT = {};
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,446 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5, minimum-scale=0.5, user-scalable=yes, maximum-scale=2.0, target-densitydpi=device-dpi" />
+
+    <title>Proper News</title>
+
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+
+	<link href="./styles/style.css" type="text/css" rel="stylesheet" />
+	<link href="./styles/mobile.css" type="text/css" rel="stylesheet" />
+	
+    <script type="text/javascript">
+    CURRENT_PAGE = "24";
+    MAIN_PAGE     = "index.html";
+    FILES_FOLDER  = "brochurefiles";
+
+
+    
+    </script>
+	
+	
+	<script src="./javascript/init.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        STATIC_FOLDER = ".";
+        DYNAMIC_FOLDER = "./..";
+
+        PUBLICATION_NAME = "Proper News";
+
+        CURRENT_VERSION = "2.7.26";
+
+        LANGS = ['en'];
+        PUBLICATION_TYPE = "catalog";
+        VIDEOS_INFO = {};
+
+    var main = function () {
+
+        loadScript('./javascript/localizator.js',function(){});
+
+        if (document.domain.indexOf('publ.com') != -1 || document.domain.indexOf('cld.bz') != -1 || document.domain.indexOf('cld.mobi') != -1 || document.domain.indexOf('cld.local') != -1) {
+            var staticServer = window.location.protocol === 'https:' ? 'https://d2ayihadozxfln.cloudfront.net' : ('http://static.' + window.location.hostname);
+            var url = staticServer + "/publication/" + CURRENT_VERSION + "/basic/cloud.js";
+            loadScript(url,function(){});
+        }
+
+    }
+
+    if (!!window.addEventListener) {
+        window.addEventListener('load', main);
+    } else {
+        window.attachEvent('onload', main);
+    }
+
+    function loadScript(url, callback){
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+        if (script.readyState){
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {
+            script.onload = function(){
+                callback();
+            };
+        }
+    }
+    </script>
+
+
+    <style type="text/css">
+        .areaLinkItem:hover, .contentItemHover:hover, .emptyImage:hover
+        {
+            	
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75869C,endColorstr=#75869C);
+	zoom:1;
+	
+	background:rgb(117,134,156);
+	background:rgba(117,134,156, 0.5);
+	
+
+        }
+
+
+
+    </style>
+</head>
+<body style="font-size: 20px; background-color: #ECF0F1;">
+	<div class="infoPopUp" id="infoPopUp" ></div>
+	<div class="popUp" id="popUp">
+		<a id="closeButton" class="closeButtonPopUp" href="#"></a>
+		<table class="popUpTable">
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Cover" src="./../flash/pages/page0001_s.png" class="popUpCover" />
+					</td>
+					<td>
+						<h4 id="popupTitle">&nbsp;</h4>
+						<p id="popupText"></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="toolbar">
+		<ul class="zoomContainer" id="zoomContainer">
+			<li>
+				<a class="zoomInButton" id="zoomIn" href="#">
+					<img src="styles/zoomIn.png" alt="Zoom In" />
+				</a>
+			</li>
+			<li>
+				<a class="zoomOutButton" id="zoomOut" href="#">
+					<img src="styles/zoomOut.png" alt="Zoom Out" />
+				</a>
+			</li>
+		</ul>
+
+		
+		
+		<div class="toolbarButtons">
+		    
+				<ul class="downloadButton toolbarLink">
+					<li class="iconLi">
+						<img class="iconToolbar" src="styles/save.png" alt="Downloads" />
+                        <img class="iconToolbar mobile" src="styles/save-mobile.png" alt="Downloads" />
+					</li>
+						<li id="downloadPdf" class="downloadSubMenu">
+							<a id="downloadPdfLink" href="./../common/downloads/publication.pdf" target="_blank"></a>
+						</li>
+										                    					
+				</ul>
+		</div>
+
+		
+		
+
+			<a id="pagePrevArrow" class="toLeftButton toolbarLink internalLink" href="./page-23.html"><img class="iconToolbar" src="styles/previous.png" alt="Previous Page" /></a>
+        
+		<span class="pager"><span id="pageLabel"></span>&nbsp;24 / 28</span>
+
+				<a id="nextPageArrow" class="toRightButton toolbarLink internalLink" href="./page-25.html"><img class="iconToolbar" src="styles/next.png" alt="Next Page" /></a>
+
+		<ul class="sharingContainer">
+			<li>
+				<a class="facebookShare" id="facebookShare" href="#" target="_blank">
+                    <img src="styles/facebook_32.png" alt="Share on Facebook" />
+					<span id="facebookShareText" class="shareTitleMenu"></span>
+				</a>
+			</li>
+			<li>
+                <a class="twitterShare" id="twitterShare" href="#" target="_blank">
+                    <img src="styles/twitter_32.png" alt="Tweet" />
+                    <span id="twitterShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="linkedinShare" id="linkedinShare" href="#" target="_blank">
+                    <img src="styles/linkedin_32.png" alt="Share on LinkedIn" />
+                    <span id="linkedinShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="tumblrShare" id="tumblrShare" href="#" target="_blank">
+                    <img src="styles/tumblr_32.png" alt="Share on Tumblr" />
+                    <span id="tumblrShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="googleShare" id="googleShare" href="#" target="_blank">
+                    <img src="styles/google_32.png" alt="Share on Google+" />
+                    <span id="googleShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="mailShare" id="mailShare" href="#" target="_blank">
+                    <img src="styles/email_32.png" alt="E-mail" />
+                    <span id="mailShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+			<li>
+                <a class="vkShare" id="vkShare" href="#" target="_blank">
+                    <img src="styles/vk_32.png" alt="Share on VK" />
+                    <span id="vkShareText" class="shareTitleMenu"></span>
+                </a>
+			</li>
+		</ul>
+
+
+		<div class="verContainer" id="verContainer">
+			<span id="basicVersionTitle" class="basicInfoTitle"></span>
+			<a id="infoButton" class="toolbarLink info" href="#"><img class="iconInfo" src="styles/info.png" alt="Information" /></a>
+
+		</div>
+	</div>
+
+	<div class="mainFrame" id="mainFrame">
+
+		<a class="mobileMenuButton" id="mobileMenuButton">
+            <img src="styles/mobile-menu.png" alt="Show Menu" style="" />
+		</a>
+
+		<div class="mobileNav">
+					<a class="toLeftButton toolbarLink internalLink" href="./page-23.html"><img class="iconToolbar" src="styles/prev-mob.png" alt="Previous Page" /></a>
+			<span class="pager">24 / 28</span>
+					<a class="toRightButton toolbarLink internalLink" href="./page-25.html"><img class="iconToolbar" src="styles/next-mob.png" alt="Next Page" /></a>
+		</div>
+
+		<div id="pageContainer" class="pageContainer" style="width: 612px; height: 792px; margin: 40px 0 0 -306px; background-color:#FFFFFF;">
+			<img alt="Page Background" src="./../common/page-substrates/page0024.jpg" style="width: 100%; height: 100%;">
+
+
+						<p class="textItem testString" style="top:2.777778%;left:5.882353%;width:2.614379%;height:1.262626%;font-size:0.450000em;color:#054E82;font-family:Myriad;">
+							24  |
+						</p>
+						<p class="textItem testString" style="top:2.651515%;left:8.986928%;width:8.660131%;height:1.388889%;font-size:0.450000em;color:#000000;font-family:Myriad Pro;">
+							<b>Proper Group</b>
+						</p>
+						<p class="textItem testString" style="top:2.651515%;left:17.810458%;width:8.006536%;height:1.388889%;font-size:0.450000em;color:#000000;font-family:Myriad Pro;">
+							International
+						</p>
+						<p class="textItem " style="top:69.191919%;left:5.882353%;width:26.143791%;height:2.020202%;font-size:0.650000em;color:#000000;font-family:Myriad Pro;">
+							<b>Health Observances include:</b>
+						</p>
+						<p class="textItem " style="top:71.843434%;left:5.882353%;width:29.084967%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Fruit and Veggies—More Matters Month
+						</p>
+						<p class="textItem " style="top:73.863636%;left:5.882353%;width:27.614379%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• National Cholesterol Education Month
+						</p>
+						<p class="textItem " style="top:76.010101%;left:5.882353%;width:15.686275%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Whole Grains Month
+						</p>
+						<p class="textItem " style="top:79.671717%;left:5.882353%;width:37.581699%;height:2.020202%;font-size:0.650000em;color:#000000;font-family:Myriad Pro;">
+							<b>Support these awareness initiatives with:</b>
+						</p>
+						<p class="textItem " style="top:82.828283%;left:5.882353%;width:23.202614%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• How to Eat Healthy FastGuides&#174;
+						</p>
+						<p class="textItem " style="top:84.974747%;left:5.882353%;width:20.098039%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Eating for a Healthier Heart
+						</p>
+						<p class="textItem " style="top:86.994949%;left:5.882353%;width:28.758170%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							• Managing High Cholesterol FastGuides&#174;
+						</p>
+						<p class="textItem " style="top:91.161616%;left:5.882353%;width:39.705882%;height:2.651515%;font-size:0.850000em;color:#054E82;font-family:Myriad Pro;">
+							Eat Right and save Money Doing It
+						</p>
+						<p class="textItem " style="top:93.813131%;left:5.882353%;width:33.169935%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Watch with Webinar on Eating Right on a Budget
+						</p>
+						<p class="textItem " style="top:7.702020%;left:8.660131%;width:31.699346%;height:6.691919%;font-size:2.200000em;color:#FFFFFF;font-family:Myriad Pro;">
+							Health and
+						</p>
+						<p class="textItem " style="top:13.005051%;left:8.660131%;width:25.163399%;height:6.691919%;font-size:2.200000em;color:#FFFFFF;font-family:Myriad Pro;">
+							Wellness
+						</p>
+						<p class="textItem " style="top:55.808081%;left:5.882353%;width:37.254902%;height:2.272727%;font-size:0.700000em;color:#054E82;font-family:Myriad Pro;">
+							<b>Choosing the right foods can help</b>
+						</p>
+						<p class="textItem " style="top:58.080808%;left:5.882353%;width:37.254902%;height:2.272727%;font-size:0.700000em;color:#054E82;font-family:Myriad Pro;">
+							<b>reduce the risk of several diseases,</b>
+						</p>
+						<p class="textItem " style="top:60.353535%;left:5.882353%;width:37.254902%;height:2.272727%;font-size:0.700000em;color:#054E82;font-family:Myriad Pro;">
+							<b>maintain a healthy weight, improve</b>
+						</p>
+						<p class="textItem " style="top:62.626263%;left:5.882353%;width:37.254902%;height:2.272727%;font-size:0.700000em;color:#054E82;font-family:Myriad Pro;">
+							<b>body functions and more — and that</b>
+						</p>
+						<p class="textItem " style="top:64.898990%;left:5.882353%;width:28.594771%;height:2.272727%;font-size:0.700000em;color:#054E82;font-family:Myriad Pro;">
+							<b>even small changes can help.</b>
+						</p>
+						<p class="textItem " style="top:5.681818%;left:50.980392%;width:26.960784%;height:6.186869%;font-size:2.035410em;color:#054E82;font-family:Myriad Pro;">
+							Training &amp;
+						</p>
+						<p class="textItem " style="top:10.479798%;left:50.980392%;width:36.764706%;height:6.186869%;font-size:2.035410em;color:#054E82;font-family:Myriad Pro;">
+							Development
+						</p>
+						<p class="textItem " style="top:38.131313%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							The Human Resource team is working together and partnering
+						</p>
+						<p class="textItem " style="top:39.646465%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							with theMI/SC/TN and local colleges onmany training programs
+						</p>
+						<p class="textItem " style="top:41.161616%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							to assist Proper in our initiatives of Growing our Own Talent as
+						</p>
+						<p class="textItem " style="top:42.676768%;left:50.980392%;width:24.836601%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							we are “Committed to Your Success!”
+						</p>
+						<p class="textItem " style="top:44.949495%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							In recent events, Michigan’s HR team has partnered with
+						</p>
+						<p class="textItem " style="top:46.464646%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							MI Works for their continued efforts recruiting and training
+						</p>
+						<p class="textItem " style="top:47.979798%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							programs through Macomb’sWorkforce &amp; Continuing Education
+						</p>
+						<p class="textItem " style="top:49.494949%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							team. After merely 1 week of partnership, and the success of the
+						</p>
+						<p class="textItem " style="top:51.010101%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							certification programs they offer, we hired 3 associates within
+						</p>
+						<p class="textItem " style="top:52.525253%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							our Warren facility. Coupled with the certificate and the Veteran
+						</p>
+						<p class="textItem " style="top:54.040404%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Boot camp, we believe this will be a successful partnership for
+						</p>
+						<p class="textItem " style="top:55.555556%;left:50.980392%;width:23.529412%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							recruiting and training candidates.
+						</p>
+						<p class="textItem " style="top:57.828283%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Going a little south to our South Carolina facility, in early 2015,
+						</p>
+						<p class="textItem " style="top:59.343434%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							the HR team partnered with Tri-County Technical College
+						</p>
+						<p class="textItem " style="top:60.858586%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							(TCTC). After the partnership was established, we quickly set up
+						</p>
+						<p class="textItem " style="top:62.373737%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							the Apprenticeship program for Mold Maker and are currently
+						</p>
+						<p class="textItem " style="top:63.888889%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							in the processes of reviewing a program for Process Technicians,
+						</p>
+						<p class="textItem " style="top:65.404040%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Quality Engineers, as well as Maintenance Technicians.  We also
+						</p>
+						<p class="textItem " style="top:66.919192%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							established another partnership with MSSC Goodwill program
+						</p>
+						<p class="textItem " style="top:68.434343%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							in which we obtain candidates whom are going through a
+						</p>
+						<p class="textItem " style="top:69.949495%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							SCMC (South Carolina Manufacturing Certification) which are
+						</p>
+						<p class="textItem " style="top:71.464646%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							required to have 100 hours of On-the-Job training, to date this
+						</p>
+						<p class="textItem " style="top:72.979798%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							program has been a successful tool in growing our own talent.
+						</p>
+						<p class="textItem " style="top:74.494949%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							For further information about the certificate please visit: http://
+						</p>
+						<p class="textItem " style="top:76.010101%;left:50.980392%;width:28.267974%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							www.sctechsystem.edu/scmc/about.htm.
+						</p>
+						<p class="textItem " style="top:78.282828%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Last but not least, is our Tennessee facility, HR Manager, Amber
+						</p>
+						<p class="textItem " style="top:79.797980%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Maiani, has meetings scheduled to search and establish
+						</p>
+						<p class="textItem " style="top:81.313131%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							an education/training facility for further advancement
+						</p>
+						<p class="textItem " style="top:82.828283%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							opportunities for our newly added proper associates to be able
+						</p>
+						<p class="textItem " style="top:84.343434%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							to enroll in a certified Department of Labor Apprenticeship
+						</p>
+						<p class="textItem " style="top:85.858586%;left:50.980392%;width:30.392157%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Program.  Stay tuned for further information.
+						</p>
+						<p class="textItem " style="top:88.131313%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							If you would like to know more about the training programs
+						</p>
+						<p class="textItem " style="top:89.646465%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							Proper has to over please email us at HR@propergroupintl.
+						</p>
+						<p class="textItem " style="top:91.161616%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							com. HR values the opportunity to speak with you, hear your
+						</p>
+						<p class="textItem " style="top:92.676768%;left:50.980392%;width:43.137255%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							goals, and see how we may line them up with our advancement
+						</p>
+						<p class="textItem " style="top:94.191919%;left:50.980392%;width:9.803922%;height:1.641414%;font-size:0.500000em;color:#000000;font-family:Myriad Pro;">
+							opportunities.
+						</p>
+						<p class="textItem testString" style="top:33.459596%;left:50.980392%;width:40.359477%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Congratulations to Todd Puchovan and Alex Koles for Graduating the</i>
+						</p>
+						<p class="textItem " style="top:34.848485%;left:50.980392%;width:34.477124%;height:1.388889%;font-size:0.450000em;color:#312025;font-family:Myriad Pro;">
+							<i>Michigan Applied Technical Training (Apprentice) program.</i>
+						</p>
+		</div>
+
+		<div class="footer">
+					<a style="color:#3E3E43;" class="footerNavLink internalLink" href="./page-1.html">1</a>
+						<span style="color:#3E3E43;" class="footerNavLink">&#8230;</span>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-17.html">17</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-18.html">18</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-19.html">19</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-20.html">20</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-21.html">21</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-22.html">22</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-23.html">23</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink currPage" href="./page-24.html">24</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-25.html">25</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-26.html">26</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-27.html">27</a>
+					<a style="color:#3E3E43;" class="footerNavLink internalLink " href="./page-28.html">28</a>
+
+				<a style="color:#3E3E43;" class="footerLink" href="./flipbook.html" target="_blank">
+					<span id="poweredBy"></span>&nbsp;FlippingBook
+				</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	        if (typeof BASIC_PAGE === 'undefined' && typeof BasicPage !== 'undefined' ){
+	            BASIC_PAGE = new BasicPage();
+	        }
+	        GALLERY_CONTENT = {};
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
