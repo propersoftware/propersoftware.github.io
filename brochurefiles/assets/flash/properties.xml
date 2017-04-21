@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <skin>
+    <bookmarksButtonVisible value="false" />
+    <searchButtonVisible value="true" />
+    <linkVisible value="true" />
+    <link>
+      <url value="http://www.propergroupintl.com/" />
+      <target value="_self" />
+      <label value="Proper Group Homepage" />
+    </link>
+    <backgroundLogoPath value="" />
+  </skin>
+  <sound>
+    <effects>
+      <hardCoverStart>
+        <url value="sound/blow.mp3" />
+        <volume value="100" />
+      </hardCoverStart>
+      <softFlipEffects>
+        <element>
+          <url value="sound/flip2.mp3" />
+          <volume value="100" />
+        </element>
+        <element>
+          <url value="sound/flip3.mp3" />
+          <volume value="100" />
+        </element>
+        <element>
+          <url value="sound/flip4.mp3" />
+          <volume value="100" />
+        </element>
+      </softFlipEffects>
+      <volume value="25" />
+    </effects>
+    <background>
+      <order value="1" />
+      <music>
+        <SoundCollectionProperty>
+          <url value="" />
+        </SoundCollectionProperty>
+      </music>
+    </background>
+  </sound>
+  <wrapProperties>
+    <dropShadowFilter>
+      <blur value="9" />
+      <alpha value="0.341176470588235" />
+    </dropShadowFilter>
+    <textSelectionColor value="#000000" />
+    <stripe>
+      <stripeColor value="#78828C" />
+      <stripeArrowColor value="#FFFFFF" />
+    </stripe>
+    <projectType value="catalog" />
+    <bookSize>
+      <percentValue value="100" />
+    </bookSize>
+    <linkRolloverColor value="#75869C" />
+    <bookProportions>
+      <width>
+        <pixelValue value="612" />
+      </width>
+      <height>
+        <pixelValue value="792" />
+      </height>
+    </bookProportions>
+  </wrapProperties>
+  <bookProperties>
+    <flipCorner value="true" />
+    <zoomedPageTransition value="1" />
+    <cover>
+      <coverBorderColor value="#000000" />
+      <coverSize>
+        <width>
+          <pixelValue value="8" />
+        </width>
+        <height>
+          <pixelValue value="8" />
+        </height>
+      </coverSize>
+    </cover>
+    <pages>
+      <defaultValue>
+        <contentWidth value="540" />
+        <width value="612" />
+        <height value="792" />
+        <contentScale value="0.765" />
+        <thumbFormat value="jpg" />
+        <zoomFormat value="swf" />
+        <format value="swf" />
+        <substrateFormat value="jpg" />
+        <substrateZoomFormat value="jpg" />
+        <textLayer value="true" />
+      </defaultValue>
+      <elements>
+        <page>
+          <pdfFileSize value="298986" />
+          <contentWidth value="273.2" />
+          <thumbFormat value="png" />
+          <id value="1" />
+          <textLayer value="false" />
+        </page>
+        <page>
+          <pdfFileSize value="54702" />
+          <thumbFormat value="png" />
+          <id value="2" />
+        </page>
+        <page>
+          <pdfFileSize value="16993" />
+          <contentWidth value="450.42" />
+          <thumbFormat value="png" />
+          <id value="3" />
+        </page>
+        <page>
+          <pdfFileSize value="966444" />
+          <contentWidth value="503.46" />
+          <thumbFormat value="png" />
+          <id value="4" />
+        </page>
+        <page>
+          <pdfFileSize value="618619" />
+          <thumbFormat value="png" />
+          <id value="5" />
+        </page>
+        <page>
+          <pdfFileSize value="359852" />
+          <contentWidth value="539.06" />
+          <thumbFormat value="png" />
+          <id value="6" />
+        </page>
+        <page>
+          <pdfFileSize value="430349" />
+          <thumbFormat value="png" />
+          <id value="7" />
+        </page>
+        <page>
+          <pdfFileSize value="444899" />
+          <contentWidth value="505.46" />
+          <thumbFormat value="png" />
+          <id value="8" />
+        </page>
+        <page>
+          <pdfFileSize value="165237" />
+          <thumbFormat value="png" />
+          <id value="9" />
+        </page>
+        <page>
+          <pdfFileSize value="220166" />
+          <contentWidth value="519.84" />
+          <thumbFormat value="png" />
+          <id value="10" />
+        </page>
+        <page>
+          <pdfFileSize value="240812" />
+          <thumbFormat value="png" />
+          <id value="11" />
+        </page>
+        <page>
+          <pdfFileSize value="265811" />
+          <thumbFormat value="png" />
+          <id value="12" />
+        </page>
+        <page>
+          <pdfFileSize value="689986" />
+          <contentWidth value="504.96" />
+          <thumbFormat value="png" />
+          <id value="13" />
+        </page>
+        <page>
+          <pdfFileSize value="183087" />
+          <contentWidth value="540.12" />
+          <thumbFormat value="png" />
+          <id value="14" />
+          <textLayer value="false" />
+        </page>
+        <page>
+          <pdfFileSize value="326398" />
+          <contentWidth value="0" />
+          <thumbFormat value="png" />
+          <id value="15" />
+        </page>
+        <page>
+          <pdfFileSize value="191302" />
+          <thumbFormat value="png" />
+          <id value="16" />
+        </page>
+        <page>
+          <pdfFileSize value="354890" />
+          <links>
+            <contentProperty>
+              <y value="729.65" />
+              <z value="11" />
+              <x value="36" />
+              <width value="104.81" />
+              <height value="14.43" />
+              <urls>
+                <url value="http://propergroupintl.com/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <contentWidth value="540.12" />
+          <thumbFormat value="png" />
+          <id value="17" />
+        </page>
+        <page>
+          <pdfFileSize value="215209" />
+          <thumbFormat value="png" />
+          <id value="18" />
+        </page>
+        <page>
+          <pdfFileSize value="355285" />
+          <contentWidth value="0" />
+          <thumbFormat value="png" />
+          <id value="19" />
+        </page>
+        <page>
+          <pdfFileSize value="198652" />
+          <contentWidth value="511.2" />
+          <thumbFormat value="png" />
+          <id value="20" />
+        </page>
+        <page>
+          <pdfFileSize value="25436" />
+          <thumbFormat value="png" />
+          <id value="21" />
+        </page>
+        <page>
+          <pdfFileSize value="430976" />
+          <contentWidth value="541.04" />
+          <thumbFormat value="png" />
+          <id value="22" />
+        </page>
+        <page>
+          <pdfFileSize value="120036" />
+          <contentWidth value="540.62" />
+          <thumbFormat value="png" />
+          <id value="23" />
+        </page>
+        <page>
+          <pdfFileSize value="285853" />
+          <contentWidth value="542.22" />
+          <thumbFormat value="png" />
+          <id value="24" />
+        </page>
+        <page>
+          <pdfFileSize value="267663" />
+          <contentWidth value="0" />
+          <thumbFormat value="png" />
+          <id value="25" />
+        </page>
+        <page>
+          <pdfFileSize value="767503" />
+          <contentWidth value="540.32" />
+          <thumbFormat value="png" />
+          <id value="26" />
+        </page>
+        <page>
+          <pdfFileSize value="591451" />
+          <thumbFormat value="png" />
+          <id value="27" />
+        </page>
+        <page>
+          <pdfFileSize value="467948" />
+          <contentWidth value="542.22" />
+          <thumbFormat value="png" />
+          <id value="28" />
+        </page>
+        <page>
+          <pdfFileSize value="333654" />
+          <thumbFormat value="png" />
+          <id value="29" />
+        </page>
+        <page>
+          <pdfFileSize value="254541" />
+          <links>
+            <contentProperty>
+              <y value="117.01" />
+              <z value="11" />
+              <x value="397.32" />
+              <width value="111.31" />
+              <height value="12.03" />
+              <urls>
+                <url value="http://www.propergroupintl.com/" />
+              </urls>
+            </contentProperty>
+          </links>
+          <thumbFormat value="png" />
+          <id value="30" />
+        </page>
+      </elements>
+    </pages>
+    <publicationName value="Proper News" />
+    <pageTypeHelper value="RLRLRLRLRLRLRLRLRLRLRLRLRLRLRL" />
+    <searchIndex ext="search/searchtext.xml" />
+  </bookProperties>
+  <tableOfContent>
+    <tocData>
+      <pageNumber value="-1" />
+    </tocData>
+  </tableOfContent>
+  <pdfFileProperties>
+    <fileURL value="downloads/publication.pdf" />
+    <fileSize value="9880158" />
+  </pdfFileProperties>
+</Properties>
