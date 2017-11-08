@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <skin>
+    <bookmarksButtonVisible value="false" />
+    <searchButtonVisible value="true" />
+    <linkVisible value="true" />
+    <link>
+      <label value="Proper Group Homepage" />
+      <url value="http://www.propergroupintl.com/" />
+      <target value="_self" />
+    </link>
+    <backgroundLogoPath value="" />
+  </skin>
+  <sound>
+    <effects>
+      <softFlipEffects>
+        <element>
+          <url value="sound/flip2.mp3" />
+          <volume value="100" />
+        </element>
+        <element>
+          <url value="sound/flip3.mp3" />
+          <volume value="100" />
+        </element>
+        <element>
+          <url value="sound/flip4.mp3" />
+          <volume value="100" />
+        </element>
+      </softFlipEffects>
+      <hardCoverStart>
+        <url value="sound/blow.mp3" />
+        <volume value="100" />
+      </hardCoverStart>
+      <volume value="25" />
+    </effects>
+    <background>
+      <order value="1" />
+      <music>
+        <SoundCollectionProperty>
+          <url value="" />
+        </SoundCollectionProperty>
+      </music>
+    </background>
+  </sound>
+  <bookProperties>
+    <zoomedPageTransition value="1" />
+    <cover>
+      <coverSize>
+        <width>
+          <pixelValue value="8" />
+        </width>
+        <height>
+          <pixelValue value="8" />
+        </height>
+      </coverSize>
+      <coverBorderColor value="#000000" />
+    </cover>
+    <pages>
+      <defaultValue>
+        <zoomFormat value="swf" />
+        <contentWidth value="540" />
+        <width value="612" />
+        <height value="792" />
+        <contentScale value="0.765" />
+        <format value="swf" />
+        <thumbFormat value="jpg" />
+        <substrateFormat value="jpg" />
+        <substrateZoomFormat value="jpg" />
+        <textLayer value="true" />
+      </defaultValue>
+      <elements>
+        <page>
+          <contentWidth value="231.2" />
+          <pdfFileSize value="81616" />
+          <id value="1" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="56606" />
+          <id value="2" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="428.82" />
+          <pdfFileSize value="24398" />
+          <id value="3" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="131723" />
+          <id value="4" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="536.96" />
+          <pdfFileSize value="248954" />
+          <id value="5" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="264.96" />
+          <pdfFileSize value="195890" />
+          <id value="6" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="0" />
+          <pdfFileSize value="396823" />
+          <id value="7" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="179133" />
+          <id value="8" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="540.46" />
+          <pdfFileSize value="189733" />
+          <id value="9" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="202222" />
+          <id value="10" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="260548" />
+          <id value="11" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="540.06" />
+          <links>
+            <contentProperty>
+              <width value="141" />
+              <urls>
+                <url value="http://servicedesk.propergroupintl.com/" />
+              </urls>
+              <y value="353.98" />
+              <z value="11" />
+              <x value="122.55" />
+              <height value="12.03" />
+            </contentProperty>
+            <contentProperty>
+              <width value="102.81" />
+              <urls>
+                <url value="mailto:it@propergroupintl.com" />
+              </urls>
+              <y value="465.98" />
+              <z value="11" />
+              <x value="61.94" />
+              <height value="12.03" />
+            </contentProperty>
+          </links>
+          <pdfFileSize value="223873" />
+          <id value="12" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="504.96" />
+          <links>
+            <contentProperty>
+              <width value="87.41" />
+              <urls>
+                <url value="http://propergroupintl.com/" />
+              </urls>
+              <y value="433.82" />
+              <z value="11" />
+              <x value="65.51" />
+              <height value="12.03" />
+            </contentProperty>
+          </links>
+          <pdfFileSize value="390457" />
+          <id value="13" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="540.1" />
+          <pdfFileSize value="130550" />
+          <id value="14" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="0" />
+          <pdfFileSize value="142707" />
+          <id value="15" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="296088" />
+          <id value="16" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <links>
+            <contentProperty>
+              <width value="152.31" />
+              <urls>
+                <url value="mailto:softwaredev@propergroupintl.com" />
+              </urls>
+              <y value="709.35" />
+              <z value="11" />
+              <x value="401.19" />
+              <height value="12.23" />
+            </contentProperty>
+          </links>
+          <pdfFileSize value="282678" />
+          <id value="17" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="395726" />
+          <id value="18" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="732022" />
+          <id value="19" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="505.46" />
+          <pdfFileSize value="394728" />
+          <id value="20" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <links>
+            <contentProperty>
+              <width value="82.6" />
+              <urls>
+                <url value="http://proper.trsretire.com/" />
+              </urls>
+              <y value="562.35" />
+              <z value="11" />
+              <x value="46" />
+              <height value="12.03" />
+            </contentProperty>
+            <contentProperty>
+              <width value="48" />
+              <urls>
+                <url value="http://paycor.com/" />
+              </urls>
+              <y value="745.35" />
+              <z value="11" />
+              <x value="66" />
+              <height value="12.03" />
+            </contentProperty>
+          </links>
+          <pdfFileSize value="243345" />
+          <id value="21" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="539" />
+          <links>
+            <contentProperty>
+              <width value="216.61" />
+              <urls>
+                <url value="http://amercianwell.com/where-can-i-see-a-doctor-online." />
+              </urls>
+              <y value="217.44" />
+              <z value="11" />
+              <x value="312.25" />
+              <height value="12.03" />
+            </contentProperty>
+            <contentProperty>
+              <width value="75.81" />
+              <urls>
+                <url value="http://americanwell.com/" />
+              </urls>
+              <y value="529.44" />
+              <z value="11" />
+              <x value="312.25" />
+              <height value="12.03" />
+            </contentProperty>
+            <contentProperty>
+              <width value="68.2" />
+              <urls>
+                <url value="http://hap.amwell.com/" />
+              </urls>
+              <y value="599.44" />
+              <z value="11" />
+              <x value="406.45" />
+              <height value="12.03" />
+            </contentProperty>
+          </links>
+          <pdfFileSize value="79793" />
+          <id value="22" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="492.9" />
+          <links>
+            <contentProperty>
+              <width value="113" />
+              <urls>
+                <url value="http://propergroup.trsretire.com/" />
+              </urls>
+              <y value="524.03" />
+              <z value="11" />
+              <x value="222.58" />
+              <height value="13.05" />
+            </contentProperty>
+          </links>
+          <pdfFileSize value="143542" />
+          <id value="23" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <contentWidth value="543.52" />
+          <pdfFileSize value="183993" />
+          <id value="24" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="241874" />
+          <id value="25" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <pdfFileSize value="184550" />
+          <id value="26" />
+          <thumbFormat value="png" />
+          <textLayer value="false" />
+        </page>
+        <page>
+          <pdfFileSize value="224802" />
+          <id value="27" />
+          <thumbFormat value="png" />
+        </page>
+        <page>
+          <links>
+            <contentProperty>
+              <width value="111.41" />
+              <urls>
+                <url value="http://www.propergroupintl.com/" />
+              </urls>
+              <y value="117.01" />
+              <z value="11" />
+              <x value="397.28" />
+              <height value="12.03" />
+            </contentProperty>
+          </links>
+          <pdfFileSize value="141764" />
+          <id value="28" />
+          <thumbFormat value="png" />
+        </page>
+      </elements>
+    </pages>
+    <publicationName value="Proper News" />
+    <pageTypeHelper value="RLRLRLRLRLRLRLRLRLRLRLRLRLRL" />
+    <searchIndex ext="search/searchtext.xml" />
+    <flipCorner value="true" />
+  </bookProperties>
+  <wrapProperties>
+    <dropShadowFilter>
+      <alpha value="0.341176470588235" />
+      <blur value="9" />
+    </dropShadowFilter>
+    <textSelectionColor value="#000000" />
+    <stripe>
+      <stripeArrowColor value="#FFFFFF" />
+      <stripeColor value="#78828C" />
+    </stripe>
+    <projectType value="catalog" />
+    <bookSize>
+      <percentValue value="100" />
+    </bookSize>
+    <linkRolloverColor value="#75869C" />
+    <bookProportions>
+      <width>
+        <pixelValue value="612" />
+      </width>
+      <height>
+        <pixelValue value="792" />
+      </height>
+    </bookProportions>
+  </wrapProperties>
+  <tableOfContent>
+    <tocData>
+      <pageNumber value="-1" />
+    </tocData>
+  </tableOfContent>
+  <pdfFileProperties>
+    <fileURL value="downloads/publication.pdf" />
+    <fileSize value="5677431" />
+  </pdfFileProperties>
+</Properties>
