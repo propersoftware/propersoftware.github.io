@@ -171,7 +171,7 @@
         </page>
         <page>
           <contentWidth value="540.2" />
-          <pdfFileSize value="113826" />
+          <pdfFileSize value="101704" />
           <id value="19" />
           <thumbFormat value="png" />
         </page>
@@ -198,6 +198,7 @@
               <z value="11" />
               <x value="346.64" />
               <height value="11.75" />
+              <color value="#75869C" />
             </contentProperty>
             <contentProperty>
               <width value="63.21" />
@@ -208,6 +209,7 @@
               <z value="11" />
               <x value="55.99" />
               <height value="12.03" />
+              <color value="#75869C" />
             </contentProperty>
           </links>
           <pdfFileSize value="219073" />
@@ -230,6 +232,7 @@
               <z value="11" />
               <x value="342.15" />
               <height value="12.97" />
+              <color value="#75869C" />
             </contentProperty>
           </links>
           <pdfFileSize value="174043" />
@@ -253,6 +256,7 @@
               <z value="12" />
               <x value="66" />
               <height value="25" />
+              <color value="#75869C" />
             </contentProperty>
             <contentProperty>
               <width value="247" />
@@ -263,6 +267,7 @@
               <z value="12" />
               <x value="46" />
               <height value="25" />
+              <color value="#75869C" />
             </contentProperty>
             <contentProperty>
               <width value="126.1" />
@@ -273,6 +278,7 @@
               <z value="11" />
               <x value="92.09" />
               <height value="12.03" />
+              <color value="#75869C" />
             </contentProperty>
             <contentProperty>
               <width value="139.11" />
@@ -283,6 +289,7 @@
               <z value="11" />
               <x value="346.89" />
               <height value="12.4" />
+              <color value="#75869C" />
             </contentProperty>
           </links>
           <pdfFileSize value="213614" />
@@ -339,6 +346,7 @@
               <z value="11" />
               <x value="186.07" />
               <height value="12.4" />
+              <color value="#75869C" />
             </contentProperty>
           </links>
           <pdfFileSize value="360550" />
@@ -357,6 +365,7 @@
               <z value="11" />
               <x value="488.6" />
               <height value="12.03" />
+              <color value="#75869C" />
             </contentProperty>
             <contentProperty>
               <width value="43.8" />
@@ -367,6 +376,7 @@
               <z value="11" />
               <x value="330.2" />
               <height value="12.03" />
+              <color value="#75869C" />
             </contentProperty>
             <contentProperty>
               <width value="118.81" />
@@ -377,6 +387,7 @@
               <z value="11" />
               <x value="413.39" />
               <height value="12.03" />
+              <color value="#75869C" />
             </contentProperty>
           </links>
           <pdfFileSize value="438735" />
@@ -395,6 +406,7 @@
               <z value="11" />
               <x value="342.79" />
               <height value="7.78" />
+              <color value="#75869C" />
             </contentProperty>
             <contentProperty>
               <width value="43.1" />
@@ -405,6 +417,7 @@
               <z value="11" />
               <x value="342.79" />
               <height value="7.78" />
+              <color value="#75869C" />
             </contentProperty>
           </links>
           <pdfFileSize value="148133" />
@@ -434,6 +447,7 @@
               <z value="11" />
               <x value="397.28" />
               <height value="12.03" />
+              <color value="#75869C" />
             </contentProperty>
           </links>
           <pdfFileSize value="1317304" />
@@ -478,6 +492,6 @@
   </tableOfContent>
   <pdfFileProperties>
     <fileURL value="downloads/publication.pdf" />
-    <fileSize value="15408019" />
+    <fileSize value="15400828" />
   </pdfFileProperties>
 </Properties>
