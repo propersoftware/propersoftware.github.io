@@ -70,179 +70,129 @@
       </defaultValue>
       <elements>
         <page>
-          <contentWidth value="273.2" />
-          <pdfFileSize value="6591189" />
+          <contentWidth value="307.2" />
+          <pdfFileSize value="766251" />
           <id value="1" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="54371" />
+          <pdfFileSize value="55887" />
           <id value="2" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="428.82" />
-          <pdfFileSize value="18472" />
+          <contentWidth value="464.82" />
+          <pdfFileSize value="21634" />
           <id value="3" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="67991" />
+          <contentWidth value="537.6" />
+          <pdfFileSize value="41006" />
           <id value="4" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="521.46" />
-          <pdfFileSize value="313922" />
+          <contentWidth value="539" />
+          <pdfFileSize value="167630" />
           <id value="5" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="540.1" />
-          <pdfFileSize value="226931" />
+          <contentWidth value="537.28" />
+          <pdfFileSize value="254143" />
           <id value="6" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="469845" />
+          <contentWidth value="538.6" />
+          <pdfFileSize value="268702" />
           <id value="7" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="369502" />
+          <pdfFileSize value="314423" />
           <id value="8" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="628428" />
+          <pdfFileSize value="193383" />
           <id value="9" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="376479" />
+          <contentWidth value="567.74" />
+          <pdfFileSize value="59017" />
           <id value="10" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="0" />
-          <pdfFileSize value="877486" />
+          <pdfFileSize value="352568" />
           <id value="11" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="213250" />
+          <contentWidth value="539.06" />
+          <pdfFileSize value="386638" />
           <id value="12" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="0" />
-          <pdfFileSize value="642319" />
+          <contentWidth value="536.6" />
+          <pdfFileSize value="660834" />
           <id value="13" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="264.96" />
-          <pdfFileSize value="451462" />
+          <pdfFileSize value="872681" />
           <id value="14" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="515354" />
+          <pdfFileSize value="853915" />
           <id value="15" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="505.46" />
-          <pdfFileSize value="315932" />
+          <pdfFileSize value="39647" />
           <id value="16" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="401230" />
+          <pdfFileSize value="209119" />
           <id value="17" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="758411" />
+          <pdfFileSize value="290764" />
           <id value="18" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <pdfFileSize value="301971" />
+          <contentWidth value="511.42" />
+          <pdfFileSize value="34004" />
           <id value="19" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <links>
-            <contentProperty>
-              <width value="97.81" />
-              <urls>
-                <url value="http://help.proper.net/" />
-              </urls>
-              <y value="517.28" />
-              <z value="10" />
-              <x value="412.31" />
-              <height value="12.4" />
-            </contentProperty>
-            <contentProperty>
-              <width value="107.31" />
-              <urls>
-                <url value="mailto:servicedesk@proper.net" />
-              </urls>
-              <y value="586.28" />
-              <z value="11" />
-              <x value="393.4" />
-              <height value="12.4" />
-            </contentProperty>
-            <contentProperty>
-              <width value="200" />
-              <y value="375.91" />
-              <z value="13" />
-              <x value="205.92" />
-              <height value="40" />
-              <id value="1" />
-            </contentProperty>
-            <contentProperty>
-              <width value="200" />
-              <y value="391.29" />
-              <z value="14" />
-              <x value="221.3" />
-              <height value="40" />
-              <id value="1" />
-            </contentProperty>
-          </links>
-          <pdfFileSize value="415526" />
+          <pdfFileSize value="353138" />
           <id value="20" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="557.42" />
-          <pdfFileSize value="354458" />
+          <pdfFileSize value="382395" />
           <id value="21" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="541.6" />
-          <pdfFileSize value="153735" />
+          <contentWidth value="510" />
+          <pdfFileSize value="479999" />
           <id value="22" />
           <thumbFormat value="png" />
         </page>
         <page>
-          <contentWidth value="0" />
-          <pdfFileSize value="916527" />
+          <pdfFileSize value="221326" />
           <id value="23" />
-          <thumbFormat value="png" />
-        </page>
-        <page>
-          <contentWidth value="0" />
-          <pdfFileSize value="1048038" />
-          <id value="24" />
-          <thumbFormat value="png" />
-        </page>
-        <page>
-          <contentWidth value="0" />
-          <pdfFileSize value="941480" />
-          <id value="25" />
           <thumbFormat value="png" />
         </page>
         <page>
@@ -256,16 +206,17 @@
               <z value="11" />
               <x value="397.28" />
               <height value="12.03" />
+              <color value="#75869C" />
             </contentProperty>
           </links>
-          <pdfFileSize value="6586010" />
-          <id value="26" />
+          <pdfFileSize value="973209" />
+          <id value="24" />
           <thumbFormat value="png" />
         </page>
       </elements>
     </pages>
     <publicationName value="Proper News" />
-    <pageTypeHelper value="RLRLRLRLRLRLRLRLRLRLRLRLRL" />
+    <pageTypeHelper value="RLRLRLRLRLRLRLRLRLRLRLRL" />
     <searchIndex ext="search/searchtext.xml" />
     <flipCorner value="true" />
   </bookProperties>
@@ -300,6 +251,6 @@
   </tableOfContent>
   <pdfFileProperties>
     <fileURL value="downloads/publication.pdf" />
-    <fileSize value="23866888" />
+    <fileSize value="8140812" />
   </pdfFileProperties>
 </Properties>
